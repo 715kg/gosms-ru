@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="ThemeMarch">
+  <!-- Favicon Icon -->
+  <link rel="icon" href="/public/img/favicon.png">
+  <!-- Site Title -->
+  <title>GoSMS - CMS система управления для отправки смс спомощью вашего смартфона через API</title>
+  <link rel="stylesheet" href="/public/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/plugins/slick.css">
+  <link rel="stylesheet" href="/public/css/plugins/animate.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/flag-icon.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(97691927, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/97691927" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+  <div class="cs-preloader cs-white_bg cs-center">
+    <div class="cs-preloader_in">
+      <img src="/public/img/logo_mini.webp" alt="Logo">
+    </div>
+  </div>
+  <!-- Start Header Section -->
+  <header class="cs-site_header cs-style1 cs-sticky-header cs-primary_color cs-white_bg">
+    <div class="cs-main_header">
+      <div class="container">
+        <div class="cs-main_header_in">
+          <div class="cs-main_header_left">
+            <a class="cs-site_branding cs-accent_color" href="index.html">
+              <img src="/public/img/logo.webp" alt="Logo">
+            </a>
+          </div>
+          <div class="cs-main_header_center">
+            <div class="cs-nav">
+              <ul class="cs-nav_list">
+                <li><a href="#home" class="cs-smoth_scroll">Главная</a></li>
+                 <li><a href="#feature" class="cs-smoth_scroll">Функции</a></li>
+                <li><a href="#tariff" class="cs-smoth_scroll">Тарифы</a></li>
+                <li><a href="#comm" class="cs-smoth_scroll">Отзывы</a></li>
+                <li><a href="#faq" class="cs-smoth_scroll">Faq</a></li>
+                <li><a href="#contact" class="cs-smoth_scroll">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cs-main_header_right">
+            <div class="cs-toolbox">
+              <a href="/index-en"><span class="cs-link"><span class="flag-icon flag-icon-us"></span> EN</span></a>
+              <a href="https://cms.gosms.ru" target="_blank"><span class="cs-btn"><span>Войти в панель</span></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+  
+  <!-- Start Hero -->
+  <div id="home">
+    <div class="cs-height_80 cs-height_lg_80"></div>
+    <section class="cs-hero cs-style1 cs-bg" data-src="/public/img/hero_bg.svg">
+      <div class="container">
+        <div class="cs-hero_img">
+          <div class="cs-hero_img_bg cs-bg" data-src="/public/img/hero_img_bg.png"></div>
+          <img src="/public/img/hero_img.png" alt="Hero Image" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+        </div>
+        <div class="cs-hero_text">
+          <div class="cs-hero_secondary_title">Полностью бесплатно в период Beta тестирования.
+           
+          </div>
+          <h1 class="cs-hero_title" style="font-size: 65px;">Экономь <br>на отправке SMS!</h1>
+          <h1 class="cs-hero_title" style="font-size: 30px;">Преврати свой смартфон в смс шлюз.</h1>
+          <div class="cs-hero_subtitle ">
+            Отправляй SMS по тарифам своего оператора <br>спомощью своего смартфона и экономь свыше 2000%<br>
+            
+            Легко интегрируй отправку смс в свой бизнес через REST API.<br>
+            Следи за статистикой и состоянием устройств из CMS панели.
+          </div>
+          
+          <a href="https://cms.gosms.ru" target="_blank" class="cs-btn"><span>Начать бесплатно</span></a>
+        </div>
+        <div class="cs-hero_shapes">
+          <div class="cs-shape cs-shape_position1">
+            <img src="/public/img/fl/3.png" alt="Shape">
+          </div>
+          <div class="cs-shape cs-shape_position2">
+            <img src="/public/img/fl/2.png" alt="Shape">
+          </div>
+          <div class="cs-shape cs-shape_position3">
+            <img src="/public/img/fl/1.png" alt="Shape">
+          </div>
+          <div class="cs-shape cs-shape_position4">
+            <img src="/public/img/fl/4.png" alt="Shape">
+          </div>
+          <div class="cs-shape cs-shape_position5">
+            <img src="/public/img/fl/5.png" alt="Shape">
+          </div>
+          <div class="cs-shape cs-shape_position6">
+            <img src="/public/img/fl/6.png" alt="Shape">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Start Main Feature -->
+  <section class="cs-gradient_bg_1">
+    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="container">
+      <div class="cs-seciton_heading cs-style1 text-center">
+        <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Использование</div>
+        <div class="cs-height_10 cs-height_lg_10"></div>
+        <h3 class="cs-section_title">Как можно использовать?</h3>
+      </div>
+      <div class="cs-height_50 cs-height_lg_40"></div>
+      <div class="row">
+        <div class="col-md-6 col-xl-3">
+          <div class="cs-height_25 cs-height_lg_0"></div>
+          <div class="cs-iconbox cs-style1">
+            <div class="cs-iconbox_icon cs-center">
+              <img src="/public/img/icons/home-aut.png" alt="Icon" style="width: 50px;">     
+            </div>
+            <div class="cs-iconbox_in">
+              <div class="cs-iconbox_number cs-primary_font">01</div>
+              <h3 class="cs-iconbox_title">Умный дом</h3>
+              <div class="cs-iconbox_subtitle">Для отправки уведомлений автоматизации, событий, статусов, разных изменений, данные датчиков и состояния служб</div>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="cs-iconbox cs-style1">
+            <div class="cs-iconbox_icon cs-center">
+              <img src="/public/img/icons/businnes.png" alt="Icon" style="width: 50px;">               
+            </div>
+            <div class="cs-iconbox_in">
+              <div class="cs-iconbox_number cs-primary_font">02</div>
+              <h3 class="cs-iconbox_title">Для бизнеса</h3>
+              <div class="cs-iconbox_subtitle">Оповещений клиентам, заказы, коды подтверждения, системы лояльности, готовность товара или услуг</div>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="cs-height_25 cs-height_lg_0"></div>
+          <div class="cs-iconbox cs-style1">
+            <div class="cs-iconbox_icon cs-center">
+              <img src="/public/img/icons/alarm.png" alt="Icon" style="width: 50px;">   
+            </div>
+            <div class="cs-iconbox_in">
+              <div class="cs-iconbox_number cs-primary_font">03</div>
+              <h3 class="cs-iconbox_title">Охрана</h3>
+              <div class="cs-iconbox_subtitle">Уведомления о проникновении, нарушении периметра, всевозможных сработках, пожарах, и так далее</div>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="cs-iconbox cs-style1">
+            <div class="cs-iconbox_icon cs-center">
+              <img src="/public/img/icons/progger.png" alt="Icon" style="width: 50px;"> 
+            </div>
+            <div class="cs-iconbox_in">
+              <div class="cs-iconbox_number cs-primary_font">04</div>
+              <h3 class="cs-iconbox_title">Программистам</h3>
+              <div class="cs-iconbox_subtitle">Например, удачное завершения деплоя через CI/CD, оповещения об критичиских ошибках, итд</div>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_45"></div>
+    </div>
+  </section>
+  <!-- End Main Feature -->
+  
+
+
+
+  <!-- Start All Feature -->
+  <section id="feature"  class="cs-gradient_bg_2" >
+    
+    <div id="feature">
+      <div class="cs-height_95 cs-height_lg_70"></div>
+      <div class="container">
+        <div class="cs-seciton_heading cs-style1 text-center">
+          <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Полезные функции
+          </div>
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <h3 class="cs-section_title">Все, что вам нужно для начала вашего проекта
+          </h3>
+          <h5 class="cs-iconbox_title" >В пакет входит не просто набор инструментов, а готовое к развертыванию концептуальное приложение.
+
+
+          </h5>
+        </div>
+        <div class="cs-height_50 cs-height_lg_40"></div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/laptop.png" alt="Icon" style="width: 50px;">               
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">Удобная панель
+                </h3>
+                <div class="cs-iconbox_subtitle">Интуитивно понятная панель управления с которой легко работать.
+
+                </div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/rocket.png" alt="Icon" style="width: 50px;"> 
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">Обновления
+                </h3>
+                <div class="cs-iconbox_subtitle">Проект развивается с каждым днем, учитывая пожелания клиентов.
+
+                </div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/paper.png" alt="Icon" style="width: 50px;">                        
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">Статер-Кит
+                </h3>
+                <div class="cs-iconbox_subtitle">Быстрое начало, без надоедливых регистраций и настроек.</div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/check.png" alt="Icon" style="width: 50px;">   
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">API интеграция
+                </h3>
+                <div class="cs-iconbox_subtitle">С легкостью интегрируйте отправку sms сообщений в свой проект.
+
+                </div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/user.png" alt="Icon" style="width: 50px;">  
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">Отличная поддержка
+                </h3>
+                <div class="cs-iconbox_subtitle">Наша техническая поддержка всегда поможет вам в решении ваших задач.</div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="cs-iconbox cs-style1 cs-type1">
+              <div class="cs-iconbox_icon cs-center">
+                <img src="/public/img/icons/keyboard.png" alt="Icon" style="width: 50px;">
+              </div>
+              <div class="cs-iconbox_in">
+                <h3 class="cs-iconbox_title">Хорошо документированы
+                </h3>
+                <div class="cs-iconbox_subtitle">Документация с множеством ссылок, изображений и примеров кода.
+
+                </div>
+              </div>
+            </div>
+            <div class="cs-height_25 cs-height_lg_25"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cs-height_75 cs-height_lg_45"></div>
+    </div>
+  </section>
+  <!-- End All Feature -->
+
+  <!-- Start Tariff -->
+  <section id="tariff" class="cs-gradient_bg_1"  >
+    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="container">
+      <div class="cs-seciton_heading cs-style1 text-center">
+        <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Прайс</div>
+        <div class="cs-height_10 cs-height_lg_10"></div>
+        <h3 class="cs-section_title">Линейка тарифов</h3>
+      </div>
+      
+      <div class="cs-height_50 cs-height_lg_40"></div>
+      
+      <div class="row">
+       
+       
+        <div class="col-lg-4" style="margin: 0 auto;">
+          <div class="cs-pricing_table cs-style1">
+            <div class="cs-pricing_head">
+              <div class="cs-pricing_heading">
+                <div class="cs-pricing_icon cs-center"><img src="/public/img/tariff/tariff-icon-free.webp" alt="Icon"></div>
+                <h2 class="cs-pricing_title cs-m0">Стартовый (Бета)</h2>
+              </div>
+              <div class="cs-price cs-primary_font">
+                <b class="cs-accent_color">0₽</b>
+                <span>/месяц</span>
+              </div>
+              <div class="cs-pricing_lable">Beta тестирование</div>
+            </div>
+            <div class="cs-pricing_body">
+              <ul class="cs-mp0 cs-pricing_feature">
+                <li>
+                  <svg width="17" height="17" id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><switch><g><path d="m24 12c0-2.3-.1-4.4-.5-5.6-.4-1.4-.9-2.7-2.1-3.9-1.5-1.4-2.8-1.8-4.8-2.2-1.4-.2-3.1-.3-4.1-.3-.3 0-.6 0-.9 0-1.1 0-2.7.1-4.2.3-2 .4-3.4.9-4.8 2.2-1.3 1.2-1.7 2.5-2.1 3.9-.4 1.2-.5 3.3-.5 5.6 0 2.3.1 4.4.5 5.6.4 1.4.9 2.7 2.1 3.9 1.5 1.4 2.8 1.8 4.8 2.2 1.6.3 3.6.3 4.6.3 1 0 3 0 4.7-.3 1.9-.4 3.3-.8 4.8-2.2 1.2-1.1 1.7-2.4 2.1-3.9.3-1.2.4-3.3.4-5.6z" fill="#09b4ff"/><path d="m12 2.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3 9.3-4.2 9.3-9.3-4.2-9.3-9.3-9.3zm4 7-4.3 5.5c-.2.2-.5.4-.7.4s-.6-.1-.7-.4l-2.3-2.8c-.3-.4-.3-1 .2-1.3s1-.3 1.3.2l1.5 1.9 3.5-4.6c.3-.4.9-.5 1.3-.2.5.3.5.8.2 1.3z" fill="#fff"/></g></switch></svg>                  
+                  <span>Запросов на отправку SMS через API: <b>50000</b></span>
+                </li>
+                <li>
+                  <svg width="17" height="17" id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><switch><g><path d="m24 12c0-2.3-.1-4.4-.5-5.6-.4-1.4-.9-2.7-2.1-3.9-1.5-1.4-2.8-1.8-4.8-2.2-1.4-.2-3.1-.3-4.1-.3-.3 0-.6 0-.9 0-1.1 0-2.7.1-4.2.3-2 .4-3.4.9-4.8 2.2-1.3 1.2-1.7 2.5-2.1 3.9-.4 1.2-.5 3.3-.5 5.6 0 2.3.1 4.4.5 5.6.4 1.4.9 2.7 2.1 3.9 1.5 1.4 2.8 1.8 4.8 2.2 1.6.3 3.6.3 4.6.3 1 0 3 0 4.7-.3 1.9-.4 3.3-.8 4.8-2.2 1.2-1.1 1.7-2.4 2.1-3.9.3-1.2.4-3.3.4-5.6z" fill="#09b4ff"/><path d="m12 2.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3 9.3-4.2 9.3-9.3-4.2-9.3-9.3-9.3zm4 7-4.3 5.5c-.2.2-.5.4-.7.4s-.6-.1-.7-.4l-2.3-2.8c-.3-.4-.3-1 .2-1.3s1-.3 1.3.2l1.5 1.9 3.5-4.6c.3-.4.9-.5 1.3-.2.5.3.5.8.2 1.3z" fill="#fff"/></g></switch></svg>                  
+                  <span>Запросов на отправку SMS через панель: ∞</span>
+                </li>
+                <li class="cs-active">
+                  <svg width="17" height="17" id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><switch><g><path d="m24 12c0-2.3-.1-4.4-.5-5.6-.4-1.4-.9-2.7-2.1-3.9-1.5-1.4-2.8-1.8-4.8-2.2-1.4-.2-3.1-.3-4.1-.3-.3 0-.6 0-.9 0-1.1 0-2.7.1-4.2.3-2 .4-3.4.9-4.8 2.2-1.3 1.2-1.7 2.5-2.1 3.9-.4 1.2-.5 3.3-.5 5.6 0 2.3.1 4.4.5 5.6.4 1.4.9 2.7 2.1 3.9 1.5 1.4 2.8 1.8 4.8 2.2 1.6.3 3.6.3 4.6.3 1 0 3 0 4.7-.3 1.9-.4 3.3-.8 4.8-2.2 1.2-1.1 1.7-2.4 2.1-3.9.3-1.2.4-3.3.4-5.6z" fill="#09b4ff"/><path d="m12 2.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3 9.3-4.2 9.3-9.3-4.2-9.3-9.3-9.3zm4 7-4.3 5.5c-.2.2-.5.4-.7.4s-.6-.1-.7-.4l-2.3-2.8c-.3-.4-.3-1 .2-1.3s1-.3 1.3.2l1.5 1.9 3.5-4.6c.3-.4.9-.5 1.3-.2.5.3.5.8.2 1.3z" fill="#fff"/></g></switch></svg>                  
+                  <span>Подключения устройств: <b>10</b></span>
+                </li>
+                <li class="cs-active">
+                  <svg width="17" height="17" id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><switch><g><path d="m24 12c0-2.3-.1-4.4-.5-5.6-.4-1.4-.9-2.7-2.1-3.9-1.5-1.4-2.8-1.8-4.8-2.2-1.4-.2-3.1-.3-4.1-.3-.3 0-.6 0-.9 0-1.1 0-2.7.1-4.2.3-2 .4-3.4.9-4.8 2.2-1.3 1.2-1.7 2.5-2.1 3.9-.4 1.2-.5 3.3-.5 5.6 0 2.3.1 4.4.5 5.6.4 1.4.9 2.7 2.1 3.9 1.5 1.4 2.8 1.8 4.8 2.2 1.6.3 3.6.3 4.6.3 1 0 3 0 4.7-.3 1.9-.4 3.3-.8 4.8-2.2 1.2-1.1 1.7-2.4 2.1-3.9.3-1.2.4-3.3.4-5.6z" fill="#09b4ff"/><path d="m12 2.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3 9.3-4.2 9.3-9.3-4.2-9.3-9.3-9.3zm4 7-4.3 5.5c-.2.2-.5.4-.7.4s-.6-.1-.7-.4l-2.3-2.8c-.3-.4-.3-1 .2-1.3s1-.3 1.3.2l1.5 1.9 3.5-4.6c.3-.4.9-.5 1.3-.2.5.3.5.8.2 1.3z" fill="#fff"/></g></switch></svg>                  
+                  <span>Экземпляр API: <b>5</b></span>
+                </li>
+                <li class="cs-active">
+                  <svg width="17" height="17" id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><switch><g><path d="m24 12c0-2.3-.1-4.4-.5-5.6-.4-1.4-.9-2.7-2.1-3.9-1.5-1.4-2.8-1.8-4.8-2.2-1.4-.2-3.1-.3-4.1-.3-.3 0-.6 0-.9 0-1.1 0-2.7.1-4.2.3-2 .4-3.4.9-4.8 2.2-1.3 1.2-1.7 2.5-2.1 3.9-.4 1.2-.5 3.3-.5 5.6 0 2.3.1 4.4.5 5.6.4 1.4.9 2.7 2.1 3.9 1.5 1.4 2.8 1.8 4.8 2.2 1.6.3 3.6.3 4.6.3 1 0 3 0 4.7-.3 1.9-.4 3.3-.8 4.8-2.2 1.2-1.1 1.7-2.4 2.1-3.9.3-1.2.4-3.3.4-5.6z" fill="#09b4ff"/><path d="m12 2.8c-5.1 0-9.3 4.2-9.3 9.3s4.2 9.3 9.3 9.3 9.3-4.2 9.3-9.3-4.2-9.3-9.3-9.3zm4 7-4.3 5.5c-.2.2-.5.4-.7.4s-.6-.1-.7-.4l-2.3-2.8c-.3-.4-.3-1 .2-1.3s1-.3 1.3.2l1.5 1.9 3.5-4.6c.3-.4.9-.5 1.3-.2.5.3.5.8.2 1.3z" fill="#fff"/></g></switch></svg>                  
+                      <span>Приоритетная поддержка</span>
+                </li>
+              </ul>
+              <div class="cs-pricing_btn">
+                <a href="https://cms.gosms.ru" target="_blank" class="cs-btn cs-size_md"><span>Начать бесплатно</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+       
+      
+       
+
+        
+
+
+
+      </div>
+      <div class="cs-height_75 cs-height_lg_45"></div>
+    </div>
+  </section>
+  <!-- End Tariff -->
+  <!-- End сomment -->
+  <section id="comm" class="cs-gradient_bg_2">
+    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="container">
+      <div class="cs-seciton_heading cs-style1 text-center">
+        <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Отзывы</div>
+        <div class="cs-height_10 cs-height_lg_10"></div>
+        <h3 class="cs-section_title">Отзывы тех, кто уже успел оценить идею проекта</h3>
+      </div>
+      <div class="cs-height_50 cs-height_lg_40"></div>
+      <div class="cs-slider cs-style1 cs-gap-24">
+        <div class="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-fade-slide="0"  data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="3" data-add-slides="3">
+          <div class="cs-slider_wrapper">
+            
+            <div class="cs-slide">
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Подключили на сайт себе через API отправку уведомлений о заказах клиентам, отлично работает, через телефон тоже следим отсылку, экономия бешенная, учитывая что у нас по 70-130 смс в день!</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/6.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Анна</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="4">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="cs-slide">
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Спасибо проекту! Раньше использовали сторонние шлюзы для отправки смс, за смс стабильно снимают деньги, но не все сообщения доходят! Через телефон ситуация значительно лучше.</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/1.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Сергей</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="4">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-slide">
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Идея зачет! Спасибо ребятам, установил тариф на своей сим карте - безлимитные SMS, закинул 1000 рублей на пару лет и забыл про оплату шлюзов. Еще и свой номер для бизнеса рекламирую!</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/2.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Лейла</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="5">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-slide" >
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Вы лучши! Экономия на отправке СМС лично у меня 5000% Подключил 4 телефона каждый по 2 сим карты с безлимитным тарифом, и не парюсь. Смс доходят даже лучше чем у шлюзов!</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/3.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Дмитрий</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="4.5">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-slide">
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Да, действительно, экономия отличная, жалко только что свое имя отправителя нельзя поставить. Но это не так важно, гльавное свой рабочий номер каждый раз показываю клиентам, отправка с него идет.</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/4.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Евгений</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="4">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-slide">
+              <div class="cs-testimonial cs-style1">
+                <div class="cs-testimonial_text">Ребят респект вам!!! У меня такая идея была давно, я искал похожие проекты но не нашел!!! Спасибо что реализовали сие чудо! Для бизнеса незаменимая штука и в экономии и в рекламе своего номера!</div>
+                <div class="cs-testimonial_meta">
+                  <div class="cs-avatar">
+                    <img src="/public/img/avators/5.avif" alt="Avatar">
+                    <div class="cs-quote cs-center">
+                      <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9033 0.470251C17.974 0.470231 18.0431 0.492568 18.1019 0.534429C18.1606 0.576288 18.2064 0.635782 18.2333 0.705356L18.9732 2.62083C19.0075 2.70954 19.0089 2.80875 18.9772 2.89853C18.9455 2.98831 18.8831 3.06201 18.8024 3.1048C17.5346 3.77738 16.6023 4.83665 16.0311 6.25297C15.8289 6.75453 15.6825 7.27956 15.595 7.81733L17.569 7.81733C17.6636 7.81733 17.7544 7.85732 17.8213 7.92851C17.8882 7.9997 17.9258 8.09624 17.9258 8.19692L17.9258 14.6207C17.9258 14.7213 17.8882 14.8179 17.8213 14.8891C17.7544 14.9603 17.6636 15.0002 17.569 15.0002L10.2806 15.0002C10.1859 15.0002 10.0952 14.9603 10.0283 14.8891C9.96136 14.8179 9.92377 14.7213 9.92377 14.6207L9.92377 10.2215C9.92329 8.5455 10.3244 6.897 11.0891 5.4317C11.8539 3.9664 12.9571 2.73265 14.2946 1.84695C15.2002 1.24811 16.1969 0.821584 17.24 0.586498C17.6221 0.499905 17.8567 0.473809 17.8665 0.472623C17.8787 0.47112 17.891 0.470328 17.9033 0.470251ZM18.19 2.59094L17.6794 1.26856C17.5984 1.28351 17.501 1.3032 17.3895 1.32859C13.4762 2.2142 10.6374 5.95429 10.6374 10.2215L10.6374 14.2411L17.2122 14.2411L17.2122 8.5765L15.1902 8.5765C15.1417 8.57658 15.0936 8.56612 15.049 8.54576C15.0044 8.52541 14.9642 8.49559 14.9308 8.45813C14.8974 8.42066 14.8715 8.37634 14.8548 8.32788C14.838 8.27942 14.8308 8.22783 14.8334 8.17628C14.8354 8.13571 14.8892 7.17133 15.3635 5.98228C15.6341 5.29767 16.0027 4.66176 16.4562 4.09717C16.9467 3.49086 17.5336 2.98102 18.19 2.59094Z" fill="currentColor"/>
+                        <path d="M8.42661 0.470251C8.4973 0.470278 8.56638 0.492638 8.6251 0.534494C8.68382 0.576352 8.72953 0.635819 8.75643 0.705356L9.49636 2.62083C9.53062 2.70954 9.53205 2.80875 9.50036 2.89853C9.46867 2.98831 9.40621 3.06201 9.32554 3.1048C8.05777 3.77738 7.12539 4.83665 6.55428 6.25297C6.3522 6.75461 6.20582 7.27961 6.11809 7.81733L8.09211 7.81733C8.18674 7.81733 8.27749 7.85732 8.34441 7.92851C8.41132 7.9997 8.44891 8.09624 8.44891 8.19692L8.44891 14.6207C8.44891 14.7213 8.41132 14.8179 8.34441 14.8891C8.27749 14.9603 8.18674 15.0002 8.09211 15.0002L0.802814 15.0002C0.708182 15.0002 0.617428 14.9603 0.550514 14.8891C0.483601 14.8179 0.446009 14.7213 0.446009 14.6207L0.446009 10.2215C0.442028 7.96623 1.16694 5.77803 2.49922 4.02375C3.8315 2.26946 5.69016 1.05573 7.76363 0.586024C8.14563 0.499431 8.38001 0.473334 8.38982 0.472148C8.40204 0.470806 8.41432 0.470174 8.42661 0.470251ZM8.71339 2.59094L8.2025 1.26856C8.12177 1.28351 8.02409 1.3032 7.91259 1.32859C3.99934 2.2142 1.15962 5.95429 1.15962 10.2215L1.15962 14.2411L7.7353 14.2411L7.7353 8.5765L5.71334 8.5765C5.6648 8.57658 5.61676 8.56612 5.57216 8.54576C5.52755 8.52541 5.48732 8.49559 5.45392 8.45813C5.42052 8.42066 5.39466 8.37634 5.37791 8.32788C5.36117 8.27942 5.35389 8.22783 5.35653 8.17628C5.35854 8.13571 5.41251 7.17133 5.88661 5.98228C6.15719 5.29767 6.5258 4.66177 6.97932 4.09717C7.46979 3.49073 8.05677 2.98087 8.71339 2.59094Z" fill="currentColor"/>
+                      </svg> 
+                    </div>                 
+                  </div>
+                  <div class="cs-testimonial_meta_right">
+                    <h3>Артур</h3>
+                    <p>Клиент GoSMS</p>
+                    <div class="cs-review" data-review="4">
+                      <img src="/public/img/icons/stars.svg" alt="Star">
+                      <div class="cs-review_in">
+                        <img src="/public/img/icons/stars.svg" alt="Star">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+          </div>
+        </div>
+        <div class="cs-pagination cs-style1"></div>
+      </div>
+    </div>
+    <div class="cs-height_100 cs-height_lg_70"></div>
+  </section>
+  <!-- End сomment -->
+
+  <!-- End partner -->
+  <!--<section class="cs-bg" data-src="/public/img/feature_bg.svg">
+    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="container">
+      <div class="cs-seciton_heading cs-style1 text-center">
+        <div class="cs-section_subtitle">Интеграции</div>
+        <div class="cs-height_10 cs-height_lg_10"></div>
+        <h3 class="cs-section_title">Наши партнеры по интеграции</h3>
+      </div>
+      <div class="cs-height_50 cs-height_lg_40"></div>
+      <div class="cs-slider cs-style1 cs-gap-24">
+        <div class="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-fade-slide="0"  data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="3" data-md-slides="4" data-lg-slides="6" data-add-slides="6">
+          <div class="cs-slider_wrapper">
+            
+            
+            <div class="cs-slide">
+              <div class="cs-client cs-accent_bg cs-center">
+                <img src="/public/img/client_3.svg" alt="Client">
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <div class="cs-pagination cs-style1"></div>
+      </div>
+    </div>
+    <div class="cs-height_100 cs-height_lg_70"></div>
+  </section>-->
+  <!-- End partner -->
+
+  <!-- Start FAQ -->
+  <section id="faq" class="cs-gradient_bg_1" >
+    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="cs-seciton_heading cs-style1 text-center">
+      <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">FAQ</div>
+      <div class="cs-height_10 cs-height_lg_10"></div>
+      <h3 class="cs-section_title">Часто задаваемые вопросы
+      </h3>
+    </div>
+    <div class="cs-height_50 cs-height_lg_40"></div>
+    <div class="container">
+      <div class="row align-items-center flex-column-reverse-lg">
+        <div class="col-xl-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+          <div class="cs-left_full_width cs-space110">
+            <div class="cs-left_sided_img">
+              <img src="/public/img/faq_img.png" alt="About">
+            </div>
+          </div>
+          <div class="cs-height_0 cs-height_lg_40"></div>
+        </div>
+        <div class="col-xl-6">
+          <div class="cs-accordians cs-style1 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="cs-accordian cs-white_bg active">
+              <div class="cs-accordian_head">
+                <h2 class="cs-accordian_title"><span>1.</span> Смогу ли я делать рассылку смс через ваш сервис?</h2>
+                <span class="cs-accordian_toggle">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 -7.36618e-07C12.0333 -8.82307e-07 9.13319 0.879733 6.66645 2.52795C4.19971 4.17617 2.27713 6.51885 1.14181 9.25975C0.00649787 12.0006 -0.290551 15.0166 0.288226 17.9264C0.867005 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16393 29.133 12.0736 29.7118C14.9834 30.2905 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.472 23.3335C29.1203 20.8668 30 17.9667 30 15C29.9957 11.0231 28.414 7.21026 25.6019 4.39815C22.7897 1.58603 18.9769 0.00430081 15 -7.36618e-07V-7.36618e-07ZM15 20C14.085 20.0009 13.2014 19.6665 12.5163 19.06C12.1075 18.6962 11.72 18.3425 11.4663 18.0887L7.875 14.5587C7.75017 14.4457 7.64946 14.3086 7.57892 14.1557C7.50838 14.0028 7.46947 13.8372 7.46452 13.6689C7.45957 13.5005 7.48869 13.3329 7.55012 13.1762C7.61155 13.0194 7.70402 12.8766 7.822 12.7564C7.93998 12.6362 8.08102 12.5412 8.23667 12.4769C8.3923 12.4125 8.55934 12.3804 8.72773 12.3822C8.89612 12.3841 9.0624 12.4199 9.21659 12.4876C9.37078 12.5553 9.5097 12.6535 9.62501 12.7762L13.225 16.3125C13.46 16.5462 13.81 16.8637 14.1738 17.1875C14.4021 17.3889 14.6961 17.5001 15.0006 17.5001C15.3051 17.5001 15.5991 17.3889 15.8275 17.1875C16.19 16.865 16.54 16.5475 16.7675 16.3212L20.375 12.7762C20.4903 12.6535 20.6292 12.5553 20.7834 12.4876C20.9376 12.4199 21.1039 12.3841 21.2723 12.3822C21.4407 12.3804 21.6077 12.4125 21.7633 12.4769C21.919 12.5412 22.06 12.6362 22.178 12.7564C22.296 12.8766 22.3885 13.0194 22.4499 13.1762C22.5113 13.333 22.5404 13.5005 22.5355 13.6689C22.5305 13.8372 22.4916 14.0028 22.4211 14.1557C22.3505 14.3086 22.2498 14.4457 22.125 14.5587L18.5263 18.095C18.2763 18.345 17.8925 18.695 17.485 19.0562C16.8003 19.6647 15.916 20.0006 15 20Z" fill="currentColor"/>
+                  </svg>                 
+                </span>
+              </div>
+              <div class="cs-accordian-body">
+                
+                Как таковой рассылки, сервис не поддерживает. Сервис подойдет для точечной отправки кодов входа в смс, уведомлений о входе, уведомлений об изменения статуса или доставки товара клиента в отдел и.т.д.
+                Если попытаться выполнить рассылку например 100 или более пользователям, рассылка будет осуществляться очень медленно и займет очень много времени, это связано с тем, что все отправляемые вами смс отправляются через ваш смартфон, через вашу SIM карту. При рассылки в больших масштабах, вас может заблокировать ваш оператор связи. Поэтому мы программно ввели ограничения на отправку смс большому числу пользователей.
+              
+              </div>
+            </div><!-- .cs-accordian -->
+            <div class="cs-height_25 cs-height_lg_25"></div>
+            <div class="cs-accordian cs-white_bg">
+              <div class="cs-accordian_head">
+                <h2 class="cs-accordian_title"><span>2.</span> 
+                  Взимаете ли вы плату за обновления?
+                </h2>
+                <span class="cs-accordian_toggle">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 -7.36618e-07C12.0333 -8.82307e-07 9.13319 0.879733 6.66645 2.52795C4.19971 4.17617 2.27713 6.51885 1.14181 9.25975C0.00649787 12.0006 -0.290551 15.0166 0.288226 17.9264C0.867005 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16393 29.133 12.0736 29.7118C14.9834 30.2905 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.472 23.3335C29.1203 20.8668 30 17.9667 30 15C29.9957 11.0231 28.414 7.21026 25.6019 4.39815C22.7897 1.58603 18.9769 0.00430081 15 -7.36618e-07V-7.36618e-07ZM15 20C14.085 20.0009 13.2014 19.6665 12.5163 19.06C12.1075 18.6962 11.72 18.3425 11.4663 18.0887L7.875 14.5587C7.75017 14.4457 7.64946 14.3086 7.57892 14.1557C7.50838 14.0028 7.46947 13.8372 7.46452 13.6689C7.45957 13.5005 7.48869 13.3329 7.55012 13.1762C7.61155 13.0194 7.70402 12.8766 7.822 12.7564C7.93998 12.6362 8.08102 12.5412 8.23667 12.4769C8.3923 12.4125 8.55934 12.3804 8.72773 12.3822C8.89612 12.3841 9.0624 12.4199 9.21659 12.4876C9.37078 12.5553 9.5097 12.6535 9.62501 12.7762L13.225 16.3125C13.46 16.5462 13.81 16.8637 14.1738 17.1875C14.4021 17.3889 14.6961 17.5001 15.0006 17.5001C15.3051 17.5001 15.5991 17.3889 15.8275 17.1875C16.19 16.865 16.54 16.5475 16.7675 16.3212L20.375 12.7762C20.4903 12.6535 20.6292 12.5553 20.7834 12.4876C20.9376 12.4199 21.1039 12.3841 21.2723 12.3822C21.4407 12.3804 21.6077 12.4125 21.7633 12.4769C21.919 12.5412 22.06 12.6362 22.178 12.7564C22.296 12.8766 22.3885 13.0194 22.4499 13.1762C22.5113 13.333 22.5404 13.5005 22.5355 13.6689C22.5305 13.8372 22.4916 14.0028 22.4211 14.1557C22.3505 14.3086 22.2498 14.4457 22.125 14.5587L18.5263 18.095C18.2763 18.345 17.8925 18.695 17.485 19.0562C16.8003 19.6647 15.916 20.0006 15 20Z" fill="currentColor"/>
+                  </svg>                 
+                </span>
+              </div>
+              <div class="cs-accordian-body">
+
+                Нет, проект - CMS, включая Android приложения и все сервисы, обновляются совершенно бесплатно, даже на бесплатном тарифе.
+              </div>
+            </div><!-- .cs-accordian -->
+            <div class="cs-height_25 cs-height_lg_25"></div>
+            <div class="cs-accordian cs-white_bg">
+              <div class="cs-accordian_head">
+                <h2 class="cs-accordian_title"><span>3.</span> 
+                  Зачем мне отправлять смс через свой смартфон?
+                </h2>
+                <span class="cs-accordian_toggle">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 -7.36618e-07C12.0333 -8.82307e-07 9.13319 0.879733 6.66645 2.52795C4.19971 4.17617 2.27713 6.51885 1.14181 9.25975C0.00649787 12.0006 -0.290551 15.0166 0.288226 17.9264C0.867005 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16393 29.133 12.0736 29.7118C14.9834 30.2905 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.472 23.3335C29.1203 20.8668 30 17.9667 30 15C29.9957 11.0231 28.414 7.21026 25.6019 4.39815C22.7897 1.58603 18.9769 0.00430081 15 -7.36618e-07V-7.36618e-07ZM15 20C14.085 20.0009 13.2014 19.6665 12.5163 19.06C12.1075 18.6962 11.72 18.3425 11.4663 18.0887L7.875 14.5587C7.75017 14.4457 7.64946 14.3086 7.57892 14.1557C7.50838 14.0028 7.46947 13.8372 7.46452 13.6689C7.45957 13.5005 7.48869 13.3329 7.55012 13.1762C7.61155 13.0194 7.70402 12.8766 7.822 12.7564C7.93998 12.6362 8.08102 12.5412 8.23667 12.4769C8.3923 12.4125 8.55934 12.3804 8.72773 12.3822C8.89612 12.3841 9.0624 12.4199 9.21659 12.4876C9.37078 12.5553 9.5097 12.6535 9.62501 12.7762L13.225 16.3125C13.46 16.5462 13.81 16.8637 14.1738 17.1875C14.4021 17.3889 14.6961 17.5001 15.0006 17.5001C15.3051 17.5001 15.5991 17.3889 15.8275 17.1875C16.19 16.865 16.54 16.5475 16.7675 16.3212L20.375 12.7762C20.4903 12.6535 20.6292 12.5553 20.7834 12.4876C20.9376 12.4199 21.1039 12.3841 21.2723 12.3822C21.4407 12.3804 21.6077 12.4125 21.7633 12.4769C21.919 12.5412 22.06 12.6362 22.178 12.7564C22.296 12.8766 22.3885 13.0194 22.4499 13.1762C22.5113 13.333 22.5404 13.5005 22.5355 13.6689C22.5305 13.8372 22.4916 14.0028 22.4211 14.1557C22.3505 14.3086 22.2498 14.4457 22.125 14.5587L18.5263 18.095C18.2763 18.345 17.8925 18.695 17.485 19.0562C16.8003 19.6647 15.916 20.0006 15 20Z" fill="currentColor"/>
+                  </svg>                 
+                </span>
+              </div>
+              <div class="cs-accordian-body">
+                Для экономии средств на смс шлюзах. Вы можете установить в ваш смарфон сим карту вашего оператора и отправлять смс по тарифам вашего оператора. <br>
+                Пример - Установите симкарту от оператора <a href="https://www.tinkoff.ru/baf/4Vlper2F3PD" target="_blank" style="color:#0d6efd">Tinkoff Мобайл</a>, Выберите тариф безлимитные смс за 49 рублей в месяц. И отправляйте смс практически бесплатно.<br>
+                Так же, оформляя сим карту по наше <a href="https://www.tinkoff.ru/baf/4Vlper2F3PD" target="_blank" style="color:#0d6efd">ссылке</a>, вы в подарок получите <b>500 ₽ на баланс и защиту от спама</b>              </div>
+            </div><!-- .cs-accordian -->
+            <div class="cs-height_25 cs-height_lg_25"></div>
+            <div class="cs-accordian cs-white_bg">
+              <div class="cs-accordian_head">
+                <h2 class="cs-accordian_title"><span>4.</span> 
+                  Я смогу подключить свое имя отправителя?
+                </h2>
+                <span class="cs-accordian_toggle">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 -7.36618e-07C12.0333 -8.82307e-07 9.13319 0.879733 6.66645 2.52795C4.19971 4.17617 2.27713 6.51885 1.14181 9.25975C0.00649787 12.0006 -0.290551 15.0166 0.288226 17.9264C0.867005 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16393 29.133 12.0736 29.7118C14.9834 30.2905 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.472 23.3335C29.1203 20.8668 30 17.9667 30 15C29.9957 11.0231 28.414 7.21026 25.6019 4.39815C22.7897 1.58603 18.9769 0.00430081 15 -7.36618e-07V-7.36618e-07ZM15 20C14.085 20.0009 13.2014 19.6665 12.5163 19.06C12.1075 18.6962 11.72 18.3425 11.4663 18.0887L7.875 14.5587C7.75017 14.4457 7.64946 14.3086 7.57892 14.1557C7.50838 14.0028 7.46947 13.8372 7.46452 13.6689C7.45957 13.5005 7.48869 13.3329 7.55012 13.1762C7.61155 13.0194 7.70402 12.8766 7.822 12.7564C7.93998 12.6362 8.08102 12.5412 8.23667 12.4769C8.3923 12.4125 8.55934 12.3804 8.72773 12.3822C8.89612 12.3841 9.0624 12.4199 9.21659 12.4876C9.37078 12.5553 9.5097 12.6535 9.62501 12.7762L13.225 16.3125C13.46 16.5462 13.81 16.8637 14.1738 17.1875C14.4021 17.3889 14.6961 17.5001 15.0006 17.5001C15.3051 17.5001 15.5991 17.3889 15.8275 17.1875C16.19 16.865 16.54 16.5475 16.7675 16.3212L20.375 12.7762C20.4903 12.6535 20.6292 12.5553 20.7834 12.4876C20.9376 12.4199 21.1039 12.3841 21.2723 12.3822C21.4407 12.3804 21.6077 12.4125 21.7633 12.4769C21.919 12.5412 22.06 12.6362 22.178 12.7564C22.296 12.8766 22.3885 13.0194 22.4499 13.1762C22.5113 13.333 22.5404 13.5005 22.5355 13.6689C22.5305 13.8372 22.4916 14.0028 22.4211 14.1557C22.3505 14.3086 22.2498 14.4457 22.125 14.5587L18.5263 18.095C18.2763 18.345 17.8925 18.695 17.485 19.0562C16.8003 19.6647 15.916 20.0006 15 20Z" fill="currentColor"/>
+                  </svg>                 
+                </span>
+              </div>
+              <div class="cs-accordian-body">
+
+                К сожалению, наш сервис не является как таковым СМС шлюзом. Мы предоставляем сервис для удаленной отправки через физическое устройство пользователя (телефон), установить имя отправителя в таком случаи невозможно. Все смс отправляются с номера вашей сим карты. Но это отличный повод лишний раз прорекламировать свой бизнес номер.
+              </div>
+            </div><!-- .cs-accordian -->
+            <div class="cs-height_25 cs-height_lg_25"></div>
+            <div class="cs-accordian cs-white_bg">
+              <div class="cs-accordian_head">
+                <h2 class="cs-accordian_title"><span>5.</span> 
+                  Могу ли я подключить несколько SIM карт?
+                </h2>
+                <span class="cs-accordian_toggle">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 -7.36618e-07C12.0333 -8.82307e-07 9.13319 0.879733 6.66645 2.52795C4.19971 4.17617 2.27713 6.51885 1.14181 9.25975C0.00649787 12.0006 -0.290551 15.0166 0.288226 17.9264C0.867005 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16393 29.133 12.0736 29.7118C14.9834 30.2905 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.472 23.3335C29.1203 20.8668 30 17.9667 30 15C29.9957 11.0231 28.414 7.21026 25.6019 4.39815C22.7897 1.58603 18.9769 0.00430081 15 -7.36618e-07V-7.36618e-07ZM15 20C14.085 20.0009 13.2014 19.6665 12.5163 19.06C12.1075 18.6962 11.72 18.3425 11.4663 18.0887L7.875 14.5587C7.75017 14.4457 7.64946 14.3086 7.57892 14.1557C7.50838 14.0028 7.46947 13.8372 7.46452 13.6689C7.45957 13.5005 7.48869 13.3329 7.55012 13.1762C7.61155 13.0194 7.70402 12.8766 7.822 12.7564C7.93998 12.6362 8.08102 12.5412 8.23667 12.4769C8.3923 12.4125 8.55934 12.3804 8.72773 12.3822C8.89612 12.3841 9.0624 12.4199 9.21659 12.4876C9.37078 12.5553 9.5097 12.6535 9.62501 12.7762L13.225 16.3125C13.46 16.5462 13.81 16.8637 14.1738 17.1875C14.4021 17.3889 14.6961 17.5001 15.0006 17.5001C15.3051 17.5001 15.5991 17.3889 15.8275 17.1875C16.19 16.865 16.54 16.5475 16.7675 16.3212L20.375 12.7762C20.4903 12.6535 20.6292 12.5553 20.7834 12.4876C20.9376 12.4199 21.1039 12.3841 21.2723 12.3822C21.4407 12.3804 21.6077 12.4125 21.7633 12.4769C21.919 12.5412 22.06 12.6362 22.178 12.7564C22.296 12.8766 22.3885 13.0194 22.4499 13.1762C22.5113 13.333 22.5404 13.5005 22.5355 13.6689C22.5305 13.8372 22.4916 14.0028 22.4211 14.1557C22.3505 14.3086 22.2498 14.4457 22.125 14.5587L18.5263 18.095C18.2763 18.345 17.8925 18.695 17.485 19.0562C16.8003 19.6647 15.916 20.0006 15 20Z" fill="currentColor"/>
+                  </svg>                 
+                </span>
+              </div>
+              <div class="cs-accordian-body">
+
+                Да, выможете подключить несколько сим карт с разными номерами, если ваш смартфон поддерживает несколько SIM карт. В панели управления можно будет выбрать с какой SIM карты производить оравку с №1 - №2 Или рандомно.
+              </div>
+            </div><!-- .cs-accordian -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cs-height_100 cs-height_lg_70"></div>
+  </section>
+  <!-- End FAQ -->
+
+
+
+
+  <!-- Start Footer -->
+  <footer id="contact" class="cs-footer">
+    <div class="cs-height_75 cs-height_lg_70"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="cs-footer_item">
+            <div class="cs-footer_widget_text">
+              <img src="/public/img/logo_footer.webp" alt="Logo" style="width: 200px;">
+              <p>
+                Подпишитесь на наши соц-сети <br>
+                что бы не пропустить новости, обновления, скидки, акции.
+                
+              </p>
+            </div>
+            <div class="cs-height_30 cs-height_lg_30"></div>
+            <div class="cs-social_btns cs-style1">
+              <a href="https://t.me/gosms_ru" target="_blank"><img src="/public/img/icons/telegram.svg" alt="Telegram" width="30"></a>
+              <a href="https://vk.com/gosms_ru" target="_blank"><img src="/public/img/icons/vk.svg" alt="Vk"  width="30"></a>
+              
+            </div>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-3 col-md-6">
+          <div class="cs-footer_item widget_nav_menu">
+            <h2 class="cs-widget_title">Информация</h2>
+            <ul class="menu">
+              <li><a href="/soglasie_gosms.pdf" target="_blank">Пользовательское соглашение</a></li>
+              <li><a href="/oferta_gosms.pdf" target="_blank" >Политика конфиденциальности</a></li>
+              <li><a href="/sitemap">Карта сайта</a></li>
+              <li><a href="https://docs.gosms.ru" target="_blank" >База знаний</a></li>
+          
+            </ul>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-3 col-md-6">
+          <div class="cs-footer_item widget_nav_menu">
+            <h2 class="cs-widget_title">Кабинет</h2>
+            <ul class="menu">
+              <li><a href="https://cms.gosms.ru" target="_blank">Войти</a></li>
+              <li><a href="https://cms.gosms.ru" target="_blank" >Учетная запись</a></li>
+              
+            </ul>
+          </div>
+        </div><!-- .col -->
+        <div class="col-lg-3 col-md-6">
+          <div class="cs-footer_item widget_nav_menu">
+            <h2 class="cs-widget_title">Поддержка</h2>
+            <form class="cs-newsletter">
+              <div class="cs-newsletter_text">Вы можете задать нам вопрос прямо сейчас.<br><br>
+              Рабочее время:</div>
+              <div class="cs-newsletter_text" style="font-size:11px">пн-пт 09:00 до 18:00<br>
+                сб-вс 10:00 до 18:00</div>
+              
+              <div class="cs-height_20 cs-height_lg_20"></div>
+              
+              <div class="cs-height_10 cs-height_lg_10"></div>
+              <a class="cs-btn cs-modal_btn" href="https://jivo.chat/04ptMdybUs" target="_blank">Написать</a>
+            </form>
+          </div>
+        </div><!-- .col -->
+      </div>
+    </div>
+    <div class="cs-height_40 cs-height_lg_30"></div>
+    <div class="cs-copyright text-center">
+      <div class="container">Все права защищены © <span id="year"></span>. ИП Ульянов А.В - ОГРН/ОГРНИП: 321132600016985 (GoSMS).</div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start teh Modal -->
+  <div class="cs-modal" data-modal="teh">
+    <div class="cs-close_overlay"></div>
+    <div class="cs-modal_in">
+      <div class="cs-modal_container cs-white_bg">
+        <button class="cs-close_modal cs-center cs-primary_bg">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683417 12.0976 1.31658 12.0976 1.70711 11.7071L0.292893 10.2929ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM10.2929 11.7071C10.6834 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L10.2929 11.7071ZM10.2929 0.292893L0.292893 10.2929L1.70711 11.7071L11.7071 1.70711L10.2929 0.292893ZM0.292893 1.70711L10.2929 11.7071L11.7071 10.2929L1.70711 0.292893L0.292893 1.70711Z" fill="white"/>
+          </svg>            
+        </button>
+        <div class="cs-height_95 cs-height_lg_70"></div>
+        
+            <iframe class="cs-contact_form" src="https://jivo.chat/04ptMdybUs" height="450px" width="1000px"></iframe>
+
+        <div class="cs-height_100 cs-height_lg_70"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End teh Modal -->
+
+
+
+
+
+  <!-- Start Blog Details -->
+  <div class="cs-modal" data-modal="details">
+    <div class="cs-close_overlay"></div>
+    <div class="cs-modal_in">
+      <div class="cs-modal_container cs-white_bg">
+        <button class="cs-close_modal cs-center cs-primary_bg">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683417 12.0976 1.31658 12.0976 1.70711 11.7071L0.292893 10.2929ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM10.2929 11.7071C10.6834 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L10.2929 11.7071ZM10.2929 0.292893L0.292893 10.2929L1.70711 11.7071L11.7071 1.70711L10.2929 0.292893ZM0.292893 1.70711L10.2929 11.7071L11.7071 10.2929L1.70711 0.292893L0.292893 1.70711Z" fill="white"/>
+          </svg>            
+        </button>
+        <div class="cs-height_60 cs-height_lg_60"></div>
+        <div class="cs-blog_details">
+          <ul class="cs-post_meta cs-mp0">
+            <li>
+              <span class="cs-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16c-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4c14.6 0 38.3 16 89.6 16c51.7 0 74.9-16 89.6-16c47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0S80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96s-96-43.1-96-96s43.1-96 96-96z"/></svg>
+              </span>
+              admin
+            </li>
+            <li>
+              <span class="cs-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 448c0 8.8 7.16 16 16 16h320c8.8 0 16-7.2 16-16V192H48v256z"/></svg>
+              </span>
+              12.09.2022
+            </li>
+          </ul>
+          <h2>Point of sale software card of using a payroll software all for your company!</h2>
+          <img src="/public/img/post_details_1.jpeg" alt="Details" class="cs-radius_10 w-100">
+          <h3>How to used point of sale software card?</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur fugit, consequuntur magni dolores eos qui ratione voluptatem sequi nesciuntBut in certain circumstances and owing to the claims.</p>
+          <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occ in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses.</p>
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="/public/img/post_details_2.jpeg" alt="Details" class="cs-radius_10 w-100">
+            </div>
+            <div class="col-lg-6">
+              <img src="/public/img/post_details_3.jpeg" alt="Details" class="cs-radius_10 w-100">
+            </div>
+          </div>
+          <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have.</p>
+          <div class="cs-height_10 cs-height_lg_10"></div>
+          <blockquote>
+            <svg width="33" height="23" viewBox="0 0 33 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.2387 0H0.955626C0.427792 0 0 0.411081 0 0.918297V12.7215C0 13.2287 0.427792 13.6398 0.955626 13.6398H6.14139V21.574C6.14139 22.081 6.56918 22.4923 7.09702 22.4923H10.168C10.5791 22.4923 10.9444 22.2393 11.0743 21.8643L14.145 13.0121C14.1776 12.9183 14.1943 12.8203 14.1943 12.7215V0.918297C14.1943 0.411081 13.7665 0 13.2387 0V0ZM12.283 12.5725L9.47911 20.6555H8.05264V12.7215C8.05264 12.2143 7.62485 11.8032 7.09702 11.8032H1.91125V1.83659H12.283V12.5725Z" fill="black"/>
+              <path d="M31.6635 0H19.3804C18.8526 0 18.4248 0.411081 18.4248 0.918297V12.7215C18.4248 13.2287 18.8526 13.6398 19.3804 13.6398H24.5664V21.574C24.5664 22.081 24.9942 22.4923 25.5221 22.4923H28.5928C29.0041 22.4923 29.3692 22.2393 29.4994 21.8643L32.5701 13.0121C32.6024 12.9183 32.6191 12.8203 32.6191 12.7215V0.918297C32.6191 0.411081 32.1913 0 31.6635 0V0ZM30.7078 12.5725L27.9039 20.6555H26.4777V12.7215C26.4777 12.2143 26.0497 11.8032 25.5221 11.8032H20.3361V1.83659H30.7078V12.5725Z" fill="black"/>
+            </svg>              
+            <p>The best point of sale software used good and very fast .Time saving or effective software Pos ut 
+              omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+            <small>Mixon Max</small>
+          </blockquote>
+          <h3>Cost Effective and Good software </h3>
+          <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose to the claims of duty or the obligations of business it will frequently occur that pleasures have.</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Our Approach</h3>
+              <p>Pos cost effective unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem quae ab illo inventore veritatis et quasi</p>
+              <ul>
+                <li>Eagy to used and time saving</li>
+                <li>Effective cast pament</li>
+                <li>High speed process</li>
+                <li>Customer data saved</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img src="/public/img/post_details_4.jpeg" alt="Details" class="cs-radius_10 w-100">
+            </div>
+          </div>
+        </div>
+        <div id="comments" class="comments-area">
+          <div class="cs-comment_wrapper">
+            <h2 class="comments-title">Comments (3)</h2>
+            <ol class="comment-list">
+              <li>
+                <div class="comment-body">
+                  <div class="comment-author">
+                    <img alt="Avatar" src="/public/img/avatar_4.png" class="avatar"> 
+                    <cite class="fn"><a href="#">Menila</a></cite> 
+                  </div>
+                  <div class="comment-meta"><a href="#">20 Apr, 2020</a> </div>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt but in certain circumstances.</p>
+                  <div class="reply"><a href="#">Reply</a></div>
+                </div>
+                <ol class="children">
+                  <li>
+                    <div class="comment-body">
+                      <div class="comment-author">
+                        <img alt="Avatar" src="/public/img/avatar_5.png" class="avatar"> 
+                        <cite class="fn"><a href="#">Karla Swit</a></cite> 
+                      </div>
+                      <div class="comment-meta"><a href="#">9 May, 2020</a> </div>
+                      <p>YSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt but in certain circumstances.</p>
+                      <div class="reply"><a href="#">Reply</a></div>
+                    </div>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <div class="comment-body">
+                  <div class="comment-author">
+                    <img alt="Avatar" src="/public/img/avatar_6.png" class="avatar"> 
+                    <cite class="fn"><a href="#">George Steven</a></cite> 
+                  </div>
+                  <div class="comment-meta"><a href="#">November 24, 2020</a> </div>
+                  <p>Great work</p>
+                  <div class="reply"><a href="#">Reply</a></div>
+                </div>
+              </li><!-- #comment-## -->
+            </ol><!-- .comment-list -->
+          </div>
+          <div class="comment-respond">
+            <h3 class="comment-reply-title">Write Your Comment</h3>
+            <form id="commentform">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" class="cs-form_field cs-border_color" placeholder="Name">
+                  <div class="cs-height_20 cs-height_lg_20"></div>
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" class="cs-form_field cs-border_color" placeholder="Email">
+                  <div class="cs-height_20 cs-height_lg_20"></div>
+                </div>
+                <div class="col-lg-12">
+                  <textarea cols="30" rows="10" class="cs-form_field cs-border_color" placeholder="Write your comment"></textarea>
+                  <div class="cs-height_20 cs-height_lg_20"></div>
+                </div>
+                <div class="col-lg-12">
+                  <button class="cs-btn cs-size_md"><span>Post Comment</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="cs-height_70 cs-height_lg_60"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Blog Details -->
+
+  <!-- Script -->
+  <script src="/public/js/plugins/jquery-3.6.0.min.js"></script>
+  <script src="/public/js/plugins/jquery.slick.min.js"></script>
+  <script src="/public/js/plugins/jquery.counter.min.js"></script>
+  <script src="/public/js/plugins/wow.min.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>
