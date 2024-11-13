@@ -18,21 +18,22 @@
   <link rel="stylesheet" href="/public/css/plugins/animate.css">
   <link rel="stylesheet" href="/public/css/style.css">
   <link rel="stylesheet" href="/public/css/flag-icon.css">
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    ym(97691927, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-    });
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/97691927" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  ym(97691927, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97691927" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 </head>
 
@@ -743,22 +744,28 @@
           <div class="cs-footer_item widget_nav_menu">
             <h2 class="cs-widget_title">Информация</h2>
             <ul class="menu">
-              <li><a href="/soglasie_gosms.pdf" target="_blank">Пользовательское соглашение</a></li>
-              <li><a href="/oferta_gosms.pdf" target="_blank" >Политика конфиденциальности</a></li>
+              <li><a href="https://docs.gosms.ru" target="_blank" >База знаний</a></li>
               <li><a href="/sitemap">Карта сайта</a></li>
               <li><a href="/sm">Карта сайта 2.0</a></li>
               <li><a href="/tags">Теги</a></li>
-              <li><a href="https://docs.gosms.ru" target="_blank" >База знаний</a></li>
+              
           
             </ul>
           </div>
         </div><!-- .col -->
+        
+        
         <div class="col-lg-3 col-md-6">
           <div class="cs-footer_item widget_nav_menu">
-            <h2 class="cs-widget_title">Кабинет</h2>
+            <h2 class="cs-widget_title">Документы</h2>
             <ul class="menu">
-              <li><a href="https://cms.gosms.ru" target="_blank">Войти</a></li>
-              <li><a href="https://cms.gosms.ru" target="_blank" >Учетная запись</a></li>
+              <li><a href="/docs/oferta" target="_blank">Публичная оферта</a></li>
+              <li><a href="/docs/soglasie-na-ob-pers-dan" target="_blank" >Политика обработки персональных данных</a></li>
+              <li><a href="/" target="_blank" >Пользовательское соглашение CMS системы сервиса GoSMS</a></li>
+              <li><a href="/docs/soglasie-gosms-client" target="_blank" >Пользовательское соглашение мобильного приложения GoSMS Client</a></li>
+              <li><a href="/docs/soglasie-reklama" target="_blank" >Согласине на получение рекламной рассылки</a></li>
+              <li><span class="cs-link cs-modal_btn" data-modal="license">Лицензии</span></li>
+              
               
             </ul>
           </div>
@@ -789,9 +796,34 @@
   </footer>
   <!-- End Footer -->
 
- 
 
 
+
+  
+
+  <div class="cs-modal" data-modal="license">
+    <div class="cs-close_overlay"></div>
+    <div class="cs-modal_in">
+      <div class="cs-modal_container cs-white_bg">
+        <button class="cs-close_modal cs-center cs-primary_bg">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.7071 1.70711C12.0976 1.31658 12.0976 0.683417 11.7071 0.292893C11.3166 -0.0976311 10.6834 -0.0976311 10.2929 0.292893L11.7071 1.70711ZM0.292893 10.2929C-0.0976311 10.6834 -0.0976311 11.3166 0.292893 11.7071C0.683417 12.0976 1.31658 12.0976 1.70711 11.7071L0.292893 10.2929ZM1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L1.70711 0.292893ZM10.2929 11.7071C10.6834 12.0976 11.3166 12.0976 11.7071 11.7071C12.0976 11.3166 12.0976 10.6834 11.7071 10.2929L10.2929 11.7071ZM10.2929 0.292893L0.292893 10.2929L1.70711 11.7071L11.7071 1.70711L10.2929 0.292893ZM0.292893 1.70711L10.2929 11.7071L11.7071 10.2929L1.70711 0.292893L0.292893 1.70711Z" fill="white"/>
+          </svg>            
+        </button>
+        <div class="cs-height_95 cs-height_lg_70"></div>
+        Проект GoSMS (https://gosms.ru) — не является СМС шлюзом, 
+        не предоставляет телематические услуги связи. 
+        Система является программным комплексным решением по упрощению управления и доставки контента между двумя или более программами для вычислений, 
+        а также управлением системой посредством пользовательского 
+        <a href="https://ru.wikipedia.org/wiki/API" target="_blank" style="color: #0084ffa8;">API</a>
+        по правилам <a href="https://ru.wikipedia.org/wiki/REST" target="_blank" style="color: #0084ffa8;"> REST </a>.
+          <br><br>
+
+        Лицензия не требуется.
+        <div class="cs-height_100 cs-height_lg_70"></div>
+      </div>
+    </div>
+  </div>
 
 
 
