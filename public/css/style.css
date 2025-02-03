@@ -727,6 +727,30 @@ hr {
   min-width: 150px;
 }
 
+.cs-btn-black {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #131313;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  line-height: 1.6em;
+  overflow: hidden;
+  padding: 0;
+  min-width: 150px;
+}
+
 .cs-btn:after, .cs-btn:before {
   content: '';
   position: absolute;
