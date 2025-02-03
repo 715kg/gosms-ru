@@ -33,10 +33,10 @@
   });
 
 
-  // function preloader() {
-  //   $(".cs-preloader_in").fadeOut();
-  //   $(".cs-preloader").delay(150).fadeOut("slow");
-  // }
+  function preloader() {
+    $(".cs-preloader_in").fadeOut();
+    $(".cs-preloader").delay(150).fadeOut("slow");
+  }
 
 
   function mainNav() {
