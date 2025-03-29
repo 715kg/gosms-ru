@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://gosms.ru/sitemap.xml
