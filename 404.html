@@ -2,15 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Перенаправление...</title>
-  </head>
-  <body>
+    <title>GoSMS.ru - Перенаправление</title>
     <script>
       // Получаем текущий путь
       const path = window.location.pathname;
       
-      // Перенаправляем на index.html с сохранением пути
-      window.location.href = '/#' + path;
+      // Если путь не корневой, перенаправляем на главную с хэшем
+      if (path !== '/') {
+        // Убираем начальный слеш
+        const cleanPath = path.substring(1);
+        // Перенаправляем на главную с хэшем
+        window.location.href = '/#/' + cleanPath;
+      } else {
+        // Если корневой путь, просто перенаправляем на главную
+        window.location.href = '/';
+      }
     </script>
+  </head>
+  <body>
+    <p>Перенаправление на главную страницу...</p>
   </body>
 </html> 

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+    
+    <!-- Главная страница -->
+    <url>
+        <loc>https://gosms.ru/</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/#/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://gosms.ru/#/?lang=cn"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/#/?lang=ru"/>
+        <image:image>
+            <image:loc>https://gosms.ru/assets/images/gosms/gosms-logo1.svg</image:loc>
+            <image:title>GoSMS.ru Logo</image:title>
+        </image:image>
+    </url>
+
+    <!-- Документы на русском -->
+    <url>
+        <loc>https://gosms.ru/#/docs/oferta</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/oferta?lang=ru"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/#/docs/soglasie-na-ob-pers-dan</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/soglasie-na-ob-pers-dan?lang=ru"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/#/docs/soglasie-gosms-client</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/soglasie-gosms-client?lang=ru"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/#/docs/soglasie-reklama</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/soglasie-reklama?lang=ru"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/#/docs/soglasie-users</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/soglasie-users?lang=ru"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/#/docs/politika-konfidencialnosti</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/#/docs/politika-konfidencialnosti?lang=ru"/>
+    </url>
+
+    <!-- Документы на английском -->
+    <url>
+        <loc>https://gosms.ru/#/docs/privacy-policy-en</loc>
+        <lastmod>2024-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/#/docs/privacy-policy-en?lang=en"/>
+    </url>
+
+</urlset> 

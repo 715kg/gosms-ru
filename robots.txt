@@ -1,3 +1,87 @@
+# GoSMS.ru robots.txt
+
 User-agent: *
 Allow: /
-sitemap: https://gosms.ru/sitemap.xml
+Allow: /#/
+Allow: /#/?lang=
+Allow: /#/docs/
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/images/gosms/
+Allow: /assets/isp/
+Allow: /assets/avatar/
+
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /src/
+Disallow: /*.json$
+Disallow: /*.js$
+Disallow: /*.map$
+Disallow: /*.md$
+Disallow: /*.log$
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /.env
+Disallow: /.env.*
+
+Allow: /#/docs/oferta
+Allow: /#/docs/soglasie-na-ob-pers-dan
+Allow: /#/docs/soglasie-gosms-client
+Allow: /#/docs/soglasie-reklama
+Allow: /#/docs/soglasie-users
+Allow: /#/docs/politika-konfidencialnosti
+Allow: /#/docs/privacy-policy-en
+
+User-agent: Googlebot
+Allow: /
+Allow: /#/
+Allow: /#/?lang=
+Allow: /#/docs/
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/images/gosms/
+Allow: /assets/isp/
+Allow: /assets/avatar/
+Crawl-delay: 1
+
+User-agent: Yandex
+Allow: /
+Allow: /#/
+Allow: /#/?lang=
+Allow: /#/docs/
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/images/gosms/
+Allow: /assets/isp/
+Allow: /assets/avatar/
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Allow: /#/
+Allow: /#/?lang=
+Allow: /#/docs/
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/images/gosms/
+Allow: /assets/isp/
+Allow: /assets/avatar/
+Crawl-delay: 1
+
+Allow: /assets/images/gosms/*.svg
+Allow: /assets/images/gosms/*.png
+Allow: /assets/images/gosms/*.jpg
+Allow: /assets/images/gosms/*.jpeg
+Allow: /assets/*.svg
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.webp
+Allow: /assets/*.avif
+Allow: /assets/isp/*.webp
+Allow: /assets/avatar/*.avif
+Disallow: /assets/images/temp/
+
+# Sitemap
+Sitemap: https://gosms.ru/sitemap.xml
