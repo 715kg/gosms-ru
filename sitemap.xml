@@ -8,8 +8,8 @@
     <!-- Главная страница -->
     <url>
         <loc>https://gosms.ru/</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/?lang=ru"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/?lang=en"/>
@@ -101,6 +101,27 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/docs/privacy-policy-en?lang=en"/>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/about</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/pricing</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://gosms.ru/features</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset> 
