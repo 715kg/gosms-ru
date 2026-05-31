@@ -1,0 +1,275 @@
+/* =====================================================
+   GoSMS Dark Theme Override
+   Accent: #00D4B8 (teal)  |  Bg: #08111F (dark navy)
+   ===================================================== */
+
+:root {
+  /* GoSMS design tokens */
+  --gs-teal:        #00D4B8;
+  --gs-teal-dark:   #00B89E;
+  --gs-teal-dim:    rgba(0, 212, 184, 0.10);
+  --gs-teal-glow:   rgba(0, 212, 184, 0.30);
+  --gs-bg:          #010507;
+  --gs-bg-card:     #041316;
+  --gs-bg-card2:    #062028;
+  --gs-border:      rgba(0, 212, 184, 0.15);
+  --gs-border-soft: rgba(255,255,255,0.07);
+  --gs-text:        #E2E8F0;
+  --gs-text-muted:  #7A93B4;
+
+  /* ── PrimeVue token overrides (dark theme) ────────── */
+  /* Surface palette → dark navy */
+  --tw-surface-0:   #041316;
+  --tw-surface-50:  #041316;
+  --tw-surface-100: #062028;
+  --tw-surface-200: rgba(255,255,255,0.08);
+  --tw-surface-300: rgba(255,255,255,0.12);
+  --tw-surface-400: #4A6480;
+  --tw-surface-500: #7A93B4;
+  --tw-surface-600: #94A7C0;
+  --tw-surface-700: #B8CEDE;
+  --tw-surface-800: #D0DDE8;
+  --tw-surface-900: #E2E8F0;
+  --tw-surface-950: #F0F4F8;
+
+  /* Text */
+  --tw-text-color:            #E2E8F0;
+  --tw-text-hover-color:      #FFFFFF;
+  --tw-text-muted-color:      #7A93B4;
+  --tw-text-hover-muted-color:#94A7C0;
+
+  /* Primary → teal */
+  --tw-primary-color:          #00D4B8;
+  --tw-primary-hover-color:    #00B89E;
+  --tw-primary-active-color:   #009E87;
+  --tw-primary-contrast-color: #08111F;
+  --tw-primary-50:  rgba(0,212,184,0.05);
+  --tw-primary-100: rgba(0,212,184,0.10);
+  --tw-primary-200: rgba(0,212,184,0.20);
+
+  /* Content / overlay backgrounds */
+  --tw-content-background:       #041316;
+  --tw-content-border-color:     rgba(255,255,255,0.08);
+  --tw-content-hover-background: #062028;
+  --tw-overlay-modal-background:    #041316;
+  --tw-overlay-popover-background:  #041316;
+  --tw-overlay-select-background:   #041316;
+  --tw-form-field-background:       #111F35;
+  --tw-form-field-border-color:     rgba(0,212,184,0.2);
+  --tw-form-field-color:            #E2E8F0;
+}
+
+/* ── Global reset ─────────────────────────────────── */
+html, body {
+  background-color: var(--gs-bg) !important;
+  color: var(--gs-text) !important;
+}
+
+#app {
+  max-width: 100% !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* ── Kill ALL background images in sections ──────── */
+section,
+section[class*="bg-[url"],
+div[class*="bg-[url"],
+.bg-\[url\(\.\.\/images\/home\/bg-3\.png\)\] {
+  background-image: none !important;
+}
+
+/* Dark bg for all sections */
+section {
+  background-color: var(--gs-bg) !important;
+}
+
+/* Alternating subtle card bg for even sections */
+section:nth-child(even) {
+  background-color: var(--gs-bg-card) !important;
+}
+
+/* ── White / light bg overrides ───────────────────── */
+.bg-white,
+[class*="bg-white"] {
+  background-color: transparent !important;
+}
+.bg-white\/40 { background: var(--gs-bg-card) !important; }
+
+/* ── Primary colour swap: blue → teal ────────────── */
+.bg-primary                  { background-color: var(--gs-teal) !important; }
+.bg-primary\/10              { background-color: var(--gs-teal-dim) !important; }
+.hover\:bg-primary:hover     { background-color: var(--gs-teal) !important; }
+.hover\:bg-primaryDark:hover { background-color: var(--gs-teal-dark) !important; }
+.text-primary,
+.\[\&\.active\]\:\!text-primary.active { color: var(--gs-teal) !important; }
+.hover\:text-primary:hover   { color: var(--gs-teal) !important; }
+.border-primary              { border-color: var(--gs-teal) !important; }
+.border-primary\/30          { border-color: rgba(0,212,184,0.3) !important; }
+.border-primary\/10          { border-color: rgba(0,212,184,0.1) !important; }
+.hover\:border-primary:hover        { border-color: var(--gs-teal) !important; }
+.hover\:border-primaryDark:hover    { border-color: var(--gs-teal-dark) !important; }
+
+/* ── Typography ───────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.text-black, .lg\:text-black { color: var(--gs-text) !important; }
+p                             { color: var(--gs-text-muted) !important; }
+.text-muted                   { color: var(--gs-text-muted) !important; }
+.text-gray-600, .text-gray-500, .text-gray-400 { color: var(--gs-text-muted) !important; }
+.text-gray-300                { color: #94A7C0 !important; }
+.text-gray-100                { color: var(--gs-text) !important; }
+.text-default-950             { color: var(--gs-teal) !important; }
+
+/* ── Navbar ───────────────────────────────────────── */
+.navbar {
+  background: rgba(8, 17, 31, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid var(--gs-border) !important;
+  box-shadow: none !important;
+}
+.navbar.is-sticky,
+.\[\&\.is-sticky\]\:bg-white.is-sticky {
+  background: rgba(8, 17, 31, 0.97) !important;
+}
+.nav-link                  { color: var(--gs-text-muted) !important; }
+.nav-link:hover,
+.nav-item.active .nav-link { color: var(--gs-teal) !important; }
+
+@media (max-width: 1024px) {
+  .navigation {
+    background: #0D1A2D !important;
+    border: 1px solid var(--gs-border) !important;
+    border-top: none !important;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.5) !important;
+  }
+}
+
+/* ── Feature icon bubbles ─────────────────────────── */
+/* The morphic border-radius icon container */
+[class*="rounded-[49%"] {
+  background: var(--gs-teal-dim) !important;
+  border-color: var(--gs-border) !important;
+}
+/* Any bordered icon container in features */
+.feature-block .border,
+.feature-block [class*="border"] {
+  background: var(--gs-teal-dim) !important;
+  border-color: var(--gs-border) !important;
+}
+
+/* ── Generic card borders ─────────────────────────── */
+.border { border-color: var(--gs-border-soft) !important; }
+
+/* ── Buttons ──────────────────────────────────────── */
+button.bg-primary,
+a.bg-primary {
+  background-color: var(--gs-teal) !important;
+  color: #08111F !important;
+  font-weight: 700 !important;
+}
+
+/* ── Inputs ───────────────────────────────────────── */
+input[type="email"],
+input[type="text"],
+.p-inputtext {
+  background: var(--gs-bg-card2) !important;
+  border-color: var(--gs-border) !important;
+  color: var(--gs-text) !important;
+}
+input::placeholder { color: #4A6480 !important; }
+
+/* ── FAQ section ──────────────────────────────────── */
+/* bg-gray-50 and similar light greys → dark */
+.bg-gray-50, [class*="bg-gray-50"],
+.bg-gray-100, [class*="bg-gray-100"] {
+  background-color: var(--gs-bg-card) !important;
+}
+/* FAQ accordion items */
+[class*="accordion"], .faq-item,
+[class*="rounded-md"]:not(button):not(a):not(span):not(input):not(img) {
+  border-color: var(--gs-border-soft) !important;
+}
+/* FAQ accordion header / panel bg */
+.p-accordion-header, .p-accordion-content,
+.p-accordion .p-accordion-header .p-accordion-header-link,
+.p-accordion .p-accordion-content {
+  background: var(--gs-bg-card) !important;
+  border-color: var(--gs-border-soft) !important;
+  color: var(--gs-text) !important;
+}
+
+/* ── Pricing cards ────────────────────────────────── */
+[class*="rounded-xl"], [class*="rounded-2xl"] {
+  border-color: var(--gs-border-soft) !important;
+}
+/* Pricing card bg */
+.flex.flex-col.shadow-2xl.rounded-xl.bg-white {
+  background-color: var(--gs-bg-card) !important;
+  border: 1px solid var(--gs-border-soft) !important;
+}
+
+/* ── Footer ───────────────────────────────────────── */
+footer {
+  background-color: #010507 !important;
+  background-image: none !important;
+  border-top: 1px solid var(--gs-border-soft) !important;
+}
+
+/* ── ScrollTop button ─────────────────────────────── */
+.p-scrolltop {
+  background: var(--gs-teal) !important;
+  color: #08111F !important;
+}
+
+/* ── Selection ────────────────────────────────────── */
+::selection {
+  background-color: var(--gs-teal) !important;
+  color: #08111F !important;
+}
+
+/* ── Span inline badge (hero) ─────────────────────── */
+.text-sm.text-black { color: var(--gs-text) !important; }
+
+/* ── PrimeVue Menu shadow polish ──────────────────── */
+html body .p-menu {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+}
+
+/* ── Swiper / Testimonial ─────────────────────────── */
+.swiper-slide, [class*="swiper"] {
+  background: transparent !important;
+}
+/* Swiper slide inner cards (usage section) */
+.swiper-slide > div,
+.swiper-slide > a {
+  background: var(--gs-bg-card) !important;
+  border: 1px solid var(--gs-border-soft) !important;
+  border-radius: 12px !important;
+}
+/* Swiper wrapper/container bg */
+[class*="swiper-container"],
+[class*="swiper-wrapper"] {
+  background: transparent !important;
+}
+
+/* ── PrimeVue buttons (FAQ tabs etc.) ─────────────── */
+/* Use high-specificity selectors to beat PrimeVue's dynamically injected styles */
+html body .p-button:not(.p-button-outlined):not([disabled]) {
+  background-color: var(--gs-teal) !important;
+  border-color: var(--gs-teal) !important;
+  color: #08111F !important;
+}
+html body .p-button.p-button-outlined {
+  background-color: transparent !important;
+  border-color: var(--gs-teal) !important;
+  color: var(--gs-teal) !important;
+}
+html body .p-button:hover {
+  background-color: var(--gs-teal-dark) !important;
+  border-color: var(--gs-teal-dark) !important;
+}
+
+/* ── Shimmer / sparkle artifacts from bg-3 image ─── */
+/* Prevent star/sparkle SVG decorations from showing */
+[class*="shape-"] { display: none !important; }
+span:has(> img[src*="shape"]) { display: none !important; }

@@ -2,126 +2,60 @@
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-    
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
     <!-- Главная страница -->
     <url>
         <loc>https://gosms.ru/</loc>
-        <lastmod>2024-03-20</lastmod>
+        <lastmod>2026-05-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://gosms.ru/?lang=cn"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/?lang=cn"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/"/>
         <image:image>
-            <image:loc>https://gosms.ru/assets/images/gosms/gosms-logo1.svg</image:loc>
-            <image:title>GoSMS.ru Logo</image:title>
+            <image:loc>https://gosms.ru/assets/images/gosms/dashboard-preview.png</image:loc>
+            <image:title>GoSMS — панель управления Android-устройствами</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gosms.ru/assets/images/gosms/gosms-logo2.svg</image:loc>
+            <image:title>GoSMS Logo</image:title>
         </image:image>
     </url>
 
-    <!-- Страница SMS -->
+    <!-- English landing page -->
+    <url>
+        <loc>https://gosms.ru/en</loc>
+        <lastmod>2026-05-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/en"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/en"/>
+    </url>
+
+    <!-- Карта сайта -->
     <url>
         <loc>https://gosms.ru/sm</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/sm?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/sm?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://gosms.ru/sm?lang=cn"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/sm?lang=ru"/>
+        <lastmod>2026-05-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/sm?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/sm?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/sm?lang=cn"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/sm"/>
     </url>
 
-    <!-- Страница тегов -->
+    <!-- Теги -->
     <url>
         <loc>https://gosms.ru/tags</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/tags?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/tags?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://gosms.ru/tags?lang=cn"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/tags?lang=ru"/>
-    </url>
-
-    <!-- Документы на русском -->
-    <url>
-        <loc>https://gosms.ru/docs/oferta</loc>
-        <lastmod>2024-03-14</lastmod>
+        <lastmod>2026-05-28</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/oferta?lang=ru"/>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/tags?lang=ru"/>
+        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/tags?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/tags?lang=cn"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/tags"/>
     </url>
 
-    <url>
-        <loc>https://gosms.ru/docs/soglasie-na-ob-pers-dan</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/soglasie-na-ob-pers-dan?lang=ru"/>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/docs/soglasie-gosms-client</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/soglasie-gosms-client?lang=ru"/>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/docs/soglasie-reklama</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/soglasie-reklama?lang=ru"/>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/docs/soglasie-users</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/soglasie-users?lang=ru"/>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/docs/politika-konfidencialnosti</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://gosms.ru/docs/politika-konfidencialnosti?lang=ru"/>
-    </url>
-
-    <!-- Документы на английском -->
-    <url>
-        <loc>https://gosms.ru/docs/privacy-policy-en</loc>
-        <lastmod>2024-03-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/docs/privacy-policy-en?lang=en"/>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/about</loc>
-        <lastmod>2024-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/pricing</loc>
-        <lastmod>2024-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://gosms.ru/features</loc>
-        <lastmod>2024-03-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-</urlset> 
+</urlset>
