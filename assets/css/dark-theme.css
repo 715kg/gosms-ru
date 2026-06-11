@@ -273,3 +273,73 @@ html body .p-button:hover {
 /* Prevent star/sparkle SVG decorations from showing */
 [class*="shape-"] { display: none !important; }
 span:has(> img[src*="shape"]) { display: none !important; }
+
+/* ══════════════════════════════════════════════════════
+   Кастомный скроллбар в фирменных цветах
+══════════════════════════════════════════════════════ */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0E3A40 #010507;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #010507;
+}
+::-webkit-scrollbar-thumb {
+  background: #0E3A40;
+  border-radius: 8px;
+  border: 2px solid #010507;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 184, 0.45);
+}
+
+/* ══════════════════════════════════════════════════════
+   Scroll-reveal (директива v-reveal в main.js)
+   .rv      — элемент ждёт появления (скрыт)
+   .rv-in   — элемент вошёл во viewport (анимация входа)
+   Анимация (не transition) — не конфликтует с hover-эффектами карточек.
+══════════════════════════════════════════════════════ */
+.rv { opacity: 0; }
+.rv.rv-in {
+  opacity: 1;
+  animation: rv-up 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+  animation-delay: var(--rv-delay, 0ms);
+}
+@keyframes rv-up {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rv { opacity: 1; }
+  .rv.rv-in { animation: none; }
+}
+
+/* ══════════════════════════════════════════════════════
+   Единая метка секции (пилюля) — как бейдж в hero
+══════════════════════════════════════════════════════ */
+.gs-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(0, 212, 184, 0.07);
+  border: 1px solid rgba(0, 212, 184, 0.22);
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gs-teal);
+}
+.gs-section-label::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gs-teal);
+  box-shadow: 0 0 8px rgba(0, 212, 184, 0.9);
+}

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
@@ -7,15 +6,14 @@
     <!-- Главная страница -->
     <url>
         <loc>https://gosms.ru/</loc>
-        <lastmod>2026-05-28</lastmod>
+        <lastmod>2026-06-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/?lang=cn"/>
+        <xhtml:link rel="alternate" hreflang="ru"        href="https://gosms.ru/"/>
+        <xhtml:link rel="alternate" hreflang="en"        href="https://gosms.ru/en/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/"/>
         <image:image>
-            <image:loc>https://gosms.ru/assets/images/gosms/dashboard-preview.png</image:loc>
+            <image:loc>https://gosms.ru/assets/images/gosms/dashboard-preview.webp</image:loc>
             <image:title>GoSMS — панель управления Android-устройствами</image:title>
         </image:image>
         <image:image>
@@ -26,36 +24,29 @@
 
     <!-- English landing page -->
     <url>
-        <loc>https://gosms.ru/en</loc>
-        <lastmod>2026-05-28</lastmod>
+        <loc>https://gosms.ru/en/</loc>
+        <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gosms.ru/en"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/en"/>
+        <xhtml:link rel="alternate" hreflang="ru"        href="https://gosms.ru/"/>
+        <xhtml:link rel="alternate" hreflang="en"        href="https://gosms.ru/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/"/>
     </url>
 
     <!-- Карта сайта -->
     <url>
-        <loc>https://gosms.ru/sm</loc>
-        <lastmod>2026-05-28</lastmod>
+        <loc>https://gosms.ru/sm/</loc>
+        <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
-        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/sm?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/sm?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/sm?lang=cn"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/sm"/>
     </url>
 
     <!-- Теги -->
     <url>
-        <loc>https://gosms.ru/tags</loc>
-        <lastmod>2026-05-28</lastmod>
+        <loc>https://gosms.ru/tags/</loc>
+        <lastmod>2026-06-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
-        <xhtml:link rel="alternate" hreflang="ru"      href="https://gosms.ru/tags?lang=ru"/>
-        <xhtml:link rel="alternate" hreflang="en"      href="https://gosms.ru/tags?lang=en"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://gosms.ru/tags?lang=cn"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/tags"/>
     </url>
 
 </urlset>
