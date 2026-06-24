@@ -44,9 +44,33 @@
     <!-- Теги -->
     <url>
         <loc>https://gosms.ru/tags/</loc>
-        <lastmod>2026-06-11</lastmod>
+        <lastmod>2026-06-24</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+
+    <!-- SEO: Android как SMS-шлюз -->
+    <url>
+        <loc>https://gosms.ru/sms-shlyuz/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SEO: Отправка SMS через API -->
+    <url>
+        <loc>https://gosms.ru/api-sms/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- SEO: Сервер для отправки SMS -->
+    <url>
+        <loc>https://gosms.ru/server-sms/</loc>
+        <lastmod>2026-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
