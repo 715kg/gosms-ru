@@ -13,7 +13,7 @@
         <xhtml:link rel="alternate" hreflang="en"        href="https://gosms.ru/en/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/"/>
         <image:image>
-            <image:loc>https://gosms.ru/assets/images/gosms/dashboard-preview.webp</image:loc>
+            <image:loc>https://gosms.ru/assets/images/gosms/hero-banner.webp</image:loc>
             <image:title>GoSMS — панель управления Android-устройствами</image:title>
         </image:image>
         <image:image>
@@ -73,4 +73,12 @@
         <priority>0.8</priority>
     </url>
 
+
+    <!-- Блог -->
+    <url>
+        <loc>https://gosms.ru/blog/</loc>
+        <lastmod>2026-10-31</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
