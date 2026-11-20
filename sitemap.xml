@@ -13,7 +13,7 @@
         <xhtml:link rel="alternate" hreflang="en"        href="https://gosms.ru/en/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gosms.ru/"/>
         <image:image>
-            <image:loc>https://gosms.ru/assets/images/gosms/hero-banner.webp</image:loc>
+            <image:loc>https://gosms.ru/assets/images/gosms/hero-panel-desktop.webp</image:loc>
             <image:title>GoSMS — панель управления Android-устройствами</image:title>
         </image:image>
         <image:image>
